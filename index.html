@@ -5,83 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Cicles Formatius d'Informàtica</title>
+    <title>El meu món dels videojocs</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #111827;
+            color: white;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #1f2937;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand bg-primary navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎮 Videojocs</a>
 
-            <a href="#" class="navbar-brand">
-                Cicles Formatius d'Informàtica
-            </a>
-
-            <ul class="navbar-nav nav">
-
-                <li class="nav-item">
-                    <a href="#s1"
-                       class="nav-link active"
-                       data-bs-toggle="tab">
-                        SMX
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#s2"
-                       class="nav-link"
-                       data-bs-toggle="tab">
-                        ASIX
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#s3"
-                       class="nav-link"
-                       data-bs-toggle="tab">
-                        DAM
-                    </a>
-                </li>
-
-            </ul>
-
+            <div>
+                <a class="btn btn-outline-light me-2" href="#jocs">Jocs</a>
+                <a class="btn btn-outline-light" href="#info">Informació</a>
+            </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <section class="hero">
+        <h1>🎮 El meu món dels videojocs</h1>
 
-        <div class="tab-content">
+        <p class="lead">
+            Una web sobre alguns dels meus videojocs preferits
+        </p>
+    </section>
 
-            <div class="tab-pane active" id="s1">
-                <h2>SMX</h2>
-                <p>
-                    Sistemes Microinformàtics i Xarxes.
-                </p>
-            </div>
+    <section id="jocs" class="section">
 
-            <div class="tab-pane" id="s2">
-                <h2>ASIX</h2>
-                <p>
-                    Administració de Sistemes Informàtics en Xarxa.
-                </p>
-            </div>
+        <div class="container">
 
-            <div class="tab-pane" id="s3">
-                <h2>DAM</h2>
-                <p>
-                    Desenvolupament d'Aplicacions Multiplataforma.
-                </p>
+            <h2 class="text-center mb-4">Els meus videojocs preferits</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-3">
+                        <h3>🚗 GTA V</h3>
+
+                        <p>
+                            Un videojoc d'acció i món obert amb moltes missions,
+                            vehicles i possibilitats.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-3">
+                        <h3>🤠 Red Dead Redemption 2</h3>
+
+                        <p>
+                            Una aventura ambientada en el salvatge oest amb
+                            una història molt completa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-3">
+                        <h3>⚔️ Minecraft</h3>
+
+                        <p>
+                            Un joc de construcció i supervivència on pots
+                            crear pràcticament qualsevol cosa.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <section id="info" class="section bg-dark">
+
+        <div class="container text-center">
+
+            <h2>💻 Per què m'agraden els videojocs?</h2>
+
+            <p class="mt-3">
+                Els videojocs permeten explorar mons diferents,
+                jugar amb amics i descobrir històries i aventures.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer class="text-center p-4 bg-black">
+        <p>Web creada per Adam El Fadlaoui - SMX</p>
+    </footer>
 
 </body>
 
