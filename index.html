@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ca">
 
@@ -6,17 +5,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Menú CF d'informàtica</title>
+  <title>Cicles Formatius d'Informàtica</title>
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f1f4f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #172554, #2563eb);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: white !important;
+      margin-left: 5px;
+      border-radius: 8px;
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-link.active {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .contenidor {
+      margin-top: 50px;
+    }
+
+    .targeta {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #2563eb;
+    }
+
+    .targeta h2 {
+      color: #172554;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .targeta p {
+      color: #555;
+      font-size: 17px;
+    }
+
+    .sobre-mi {
+      border-left-color: #7c3aed;
+    }
+
+    .sobre-mi h2 {
+      color: #7c3aed;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Barra de navegació -->
-  <nav class="navbar navbar-expand bg-primary navbar-dark">
+  <nav class="navbar navbar-expand navbar-dark">
     <div class="container">
 
       <a href="#" class="navbar-brand">
@@ -50,52 +109,97 @@
         </li>
 
       </ul>
+
     </div>
   </nav>
 
-  <!-- Contingut de les pestanyes -->
-  <div class="container mt-4">
+
+  <!-- Contingut -->
+  <div class="container contenidor">
 
     <div class="tab-content">
 
       <!-- SMX -->
       <div class="tab-pane fade show active" id="s1">
-        <h3>SMX</h3>
-        <p>
-          Explicació SMX: M1 Muntatge i M2 Sistemes Operatius Monolloc.
-        </p>
+
+        <div class="targeta">
+          <h2>💻 SMX</h2>
+
+          <p>
+            Sistemes Microinformàtics i Xarxes.
+          </p>
+
+          <p>
+            En aquest cicle s'estudien temes com el muntatge
+            d'ordinadors, sistemes operatius, xarxes i seguretat informàtica.
+          </p>
+        </div>
+
       </div>
+
 
       <!-- ASIX -->
       <div class="tab-pane fade" id="s2">
-        <h3>ASIX</h3>
-        <p>
-          Explicació ASIX: M1 Sistemes Informàtics i M2 Ciberseguretat.
-        </p>
+
+        <div class="targeta">
+          <h2>🖥️ ASIX</h2>
+
+          <p>
+            Administració de Sistemes Informàtics en Xarxa.
+          </p>
+
+          <p>
+            Es treballa amb sistemes informàtics, xarxes,
+            servidors, virtualització i ciberseguretat.
+          </p>
+        </div>
+
       </div>
+
 
       <!-- DAM -->
       <div class="tab-pane fade" id="s3">
-        <h3>DAM</h3>
-        <p>
-          Explicació DAM: M1 Sistemes Informàtics i M2 Programació.
-        </p>
+
+        <div class="targeta">
+          <h2>👨‍💻 DAM</h2>
+
+          <p>
+            Desenvolupament d'Aplicacions Multiplataforma.
+          </p>
+
+          <p>
+            En aquest cicle s'aprèn programació, bases de dades
+            i desenvolupament d'aplicacions.
+          </p>
+        </div>
+
       </div>
+
 
       <!-- Sobre mi -->
       <div class="tab-pane fade" id="s4">
-        <h3>Sobre mi</h3>
-        <p>
-          Hola! Soc Adam i estic estudiant informàtica.
-        </p>
-        <p>
-          M'interessen els ordinadors, les xarxes, els sistemes operatius
-          i la tecnologia.
-        </p>
+
+        <div class="targeta sobre-mi">
+          <h2>👋 Sobre mi</h2>
+
+          <p>
+            Hola! Soc <strong>Adam</strong>.
+          </p>
+
+          <p>
+            Estic estudiant informàtica i m'interessen especialment
+            els ordinadors, les xarxes, els sistemes operatius
+            i la tecnologia.
+          </p>
+
+        </div>
+
       </div>
 
     </div>
+
   </div>
+
 
   <!-- Bootstrap JavaScript -->
   <script
@@ -104,6 +208,3 @@
 
 </body>
 </html>
-```
-
-He afegit també `container`, títols `<h3>` i separació entre seccions perquè quedi més net, però sense complicar gaire el codi.
