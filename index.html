@@ -1,123 +1,109 @@
+```html
 <!DOCTYPE html>
 <html lang="ca">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>El meu món dels videojocs</title>
+  <title>Menú CF d'informàtica</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #111827;
-            color: white;
-        }
-
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            background-color: #1f2937;
-        }
-
-        .card {
-            height: 100%;
-        }
-
-        .section {
-            padding: 40px 20px;
-        }
-    </style>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">🎮 Videojocs</a>
+  <!-- Barra de navegació -->
+  <nav class="navbar navbar-expand bg-primary navbar-dark">
+    <div class="container">
 
-            <div>
-                <a class="btn btn-outline-light me-2" href="#jocs">Jocs</a>
-                <a class="btn btn-outline-light" href="#info">Informació</a>
-            </div>
-        </div>
-    </nav>
+      <a href="#" class="navbar-brand">
+        Cicles Formatius d'Informàtica
+      </a>
 
-    <section class="hero">
-        <h1>🎮 El meu món dels videojocs</h1>
+      <ul class="navbar-nav nav">
 
-        <p class="lead">
-            Una web sobre alguns dels meus videojocs preferits
+        <li class="nav-item">
+          <a href="#s1" class="nav-link active" data-bs-toggle="tab">
+            SMX
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#s2" class="nav-link" data-bs-toggle="tab">
+            ASIX
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#s3" class="nav-link" data-bs-toggle="tab">
+            DAM
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#s4" class="nav-link" data-bs-toggle="tab">
+            Sobre mi
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contingut de les pestanyes -->
+  <div class="container mt-4">
+
+    <div class="tab-content">
+
+      <!-- SMX -->
+      <div class="tab-pane fade show active" id="s1">
+        <h3>SMX</h3>
+        <p>
+          Explicació SMX: M1 Muntatge i M2 Sistemes Operatius Monolloc.
         </p>
-    </section>
+      </div>
 
-    <section id="jocs" class="section">
+      <!-- ASIX -->
+      <div class="tab-pane fade" id="s2">
+        <h3>ASIX</h3>
+        <p>
+          Explicació ASIX: M1 Sistemes Informàtics i M2 Ciberseguretat.
+        </p>
+      </div>
 
-        <div class="container">
+      <!-- DAM -->
+      <div class="tab-pane fade" id="s3">
+        <h3>DAM</h3>
+        <p>
+          Explicació DAM: M1 Sistemes Informàtics i M2 Programació.
+        </p>
+      </div>
 
-            <h2 class="text-center mb-4">Els meus videojocs preferits</h2>
+      <!-- Sobre mi -->
+      <div class="tab-pane fade" id="s4">
+        <h3>Sobre mi</h3>
+        <p>
+          Hola! Soc Adam i estic estudiant informàtica.
+        </p>
+        <p>
+          M'interessen els ordinadors, les xarxes, els sistemes operatius
+          i la tecnologia.
+        </p>
+      </div>
 
-            <div class="row g-4">
+    </div>
+  </div>
 
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-3">
-                        <h3>🚗 GTA V</h3>
-
-                        <p>
-                            Un videojoc d'acció i món obert amb moltes missions,
-                            vehicles i possibilitats.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-3">
-                        <h3>🤠 Red Dead Redemption 2</h3>
-
-                        <p>
-                            Una aventura ambientada en el salvatge oest amb
-                            una història molt completa.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-3">
-                        <h3>⚔️ Minecraft</h3>
-
-                        <p>
-                            Un joc de construcció i supervivència on pots
-                            crear pràcticament qualsevol cosa.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="info" class="section bg-dark">
-
-        <div class="container text-center">
-
-            <h2>💻 Per què m'agraden els videojocs?</h2>
-
-            <p class="mt-3">
-                Els videojocs permeten explorar mons diferents,
-                jugar amb amics i descobrir històries i aventures.
-            </p>
-
-        </div>
-
-    </section>
-
-    <footer class="text-center p-4 bg-black">
-        <p>Web creada per Adam El Fadlaoui - SMX</p>
-    </footer>
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 
 </body>
-
 </html>
+```
+
+He afegit també `container`, títols `<h3>` i separació entre seccions perquè quedi més net, però sense complicar gaire el codi.
